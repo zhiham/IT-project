@@ -1,0 +1,372 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+
+body{
+	background: #f4f6f9;
+}
+
+table.timetableAttendance {
+  width: 700px;  
+  border-collapse: collapse;
+  margin-top: 40px;
+  border-radius: 30px;
+  border: 4px solid black;
+}
+
+
+table.timetableAttendance th,
+table.timetableAttendance td {
+  border: 2px solid black;
+  padding: 12px;
+  font-family: Georgia, serif;
+  font-style: normal;
+  font-size: 15px;
+  width: 800px;
+  height: 30px;
+}
+
+
+
+
+table.timetableAttendance th {
+  background-color: #FF7518	;
+  font-weight: bold;
+  font-size: 22px;
+  height: 40px;
+  padding-top: 30px;
+  text-align: center;
+  
+}
+
+table.timetableAttendanceIntake {
+  width: 550px;  
+  border-collapse: collapse;
+  margin-top: 40px;
+  height: 337px;
+  border: 4px solid black;
+  border-radius: 20px;
+}
+
+
+table.timetableAttendanceIntake th,
+table.timetableAttendanceIntake td {
+  border: 2px solid black;
+  padding: 12px;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-style: normal;
+  font-size: 15px;
+  height: 100px;
+}
+
+
+
+table.timetableAttendanceIntake th {
+  background-color: #FF7518;
+  font-weight: bold;
+  font-size: 15px;
+  height: 50px;
+  
+}
+
+.tables-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;           
+  padding: 40px;        
+  flex-wrap: wrap;      
+  box-sizing: border-box;
+
+}
+
+
+
+.semester-tables {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 800px;
+  margin-top: 40px;
+}
+
+.details-table {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  border-radius: 20px;
+  height: 800px;
+}
+
+
+.intake{
+	font-size: 30px;
+	padding-top: 5px;
+}
+
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.Weekday{
+	display: block;
+	height: 50px;
+
+}
+
+.intake-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.intake-label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px; 
+}
+
+.intake-select {
+  margin-top: 5px;
+}
+
+
+.attendance-card {
+  background-color: #fffaf0;
+  border: 2px solid #ff7518;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(255, 117, 24, 0.15);
+  width: 750px;
+}
+
+.attendance-semester {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff7518;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+.attendance-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(255, 117, 24, 0.1);
+  margin-bottom: 10px;
+  font-family: Georgia, serif;
+  font-size: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .tables-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .details-table {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .attendance-card {
+    max-width: 100%;
+  }
+}
+
+.enhanced-intake-table {
+  width: 100%;
+  max-width: 600px;
+  border: 4px solid #ff7518;
+  border-radius: 15px;
+  margin: 30px auto;
+  background-color: #fffaf0;
+  box-shadow: 0 5px 15px rgba(255, 117, 24, 0.15);
+  overflow: hidden;
+}
+
+.intake-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.intake-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  font-family: Georgia, serif;
+}
+
+.intake-dropdown {
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ff7518;
+  font-size: 16px;
+  font-family: Georgia, serif;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+.intake-dropdown:focus {
+  border-color: #e65c00;
+  outline: none;
+}
+
+.attendance-summary-card {
+  background-color: #fff;
+  border: 2px solid #ff7518;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(255, 117, 24, 0.1);
+  margin: 20px;
+}
+
+.attendance-summary-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff7518;
+  margin-bottom: 15px;
+  font-family: Georgia, serif;
+}
+
+.logout-button-div {
+    margin-top: 450px;
+    display: flex;
+    gap: 20px;       
+	bottom: 30px;          
+	right: 30px;             
+	display: flex;
+	gap: 20px;
+	z-index: 1000; 
+	margin-left: 50px;	
+	position: fixed;
+}
+
+.button-44 {
+            background-color: #FF7518;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-44:hover {
+            background-color: #e35e00;
+        }

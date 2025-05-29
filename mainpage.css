@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+/*maintitle css start*/
+.maintext{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100px;
+    position: absolute;
+    width: 800px;
+    justify-content: center;
+    left: 230px;
+    top: 300px;
+    margin-bottom: 60px;
+    margin-left: 150px;
+  }
+
+  
+  .mainsubtext{
+    font-size: 30px;
+    position: absolute;
+    width: 650px;
+    margin-top: 310px;
+    margin-bottom: 2px;
+    background-color: white;
+    justify-content: center;
+    left: 300px;
+    top: 300px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border-color: brown;
+    margin-left: 130px;
+  }
+
+.maintitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 0;
+    text-align: center;
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    font-size: 48px; /* Adjusted font size for emphasis */
+    color: black; /* Ensuring text is visible on the background */
+    position: center;
+}
+
+.mainbg {
+    height: auto; /* Adjusted height for full screen */
+    width: 100%; /* Set to full width */
+    background-image: url('path_to_your_background_image.jpg'); /* Set background image */
+    background-size: cover; /* Cover entire background */
+    background-position: center; /* Center the background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+  
+
+    .button:hover{
+    -webkit-transform:scale(1.1); 
+        transform:scale(1.1);
+      }
+
+      /* maintitle css start */
+      /* maincontent css start */
+
+      .bodymeasurepic, .exercisepic{
+        height: 100%;
+        width: 100%;
+      }
+      .bodymeasurebox, .exercisebox{
+        border: 3px solid black;
+      }
+
+      .firstlayer, .bodymeasurebox{
+        display: flex;
+      }
+
+    .bodymeasuretitle{
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 180px;
+        justify-content: center;
+        font-size: 40px; 
+    }
+    .exercisetitle{
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 240px;
+        justify-content: center;
+        font-size: 40px; 
+    }
+
+    .startmeasurebutton{
+        position: absolute;
+        margin-top: 440px;
+        margin-left: 100px;
+        left: 180px;
+        padding: 5px;
+        justify-content: center;
+        font-size: 30px;
+        border-color: brown;
+        background-color: orange;
+        transition: 0.3s width linear;
+        border-radius: 15px;
+        box-shadow: 4px 4px 4px #000;
+        transition:transform 0.25s ease;
+        cursor: pointer;
+        }
+
+    .startmeasurebutton:hover{
+        -webkit-transform:scale(1.1); 
+        transform:scale(1.1);
+        }
+
+    .getactivebutton{
+        position: absolute;
+        margin-top: 440px;
+        margin-left: 230px;
+        left: 880px;
+        padding: 5px;
+        justify-content: center;
+        font-size: 30px;
+        border-color: brown;
+        background-color: orange;
+        transition: 0.3s width linear;
+        border-radius: 15px;
+        box-shadow: 4px 4px 4px #000;
+        transition:transform 0.25s ease;
+        cursor: pointer;
+     }
+    
+    .getactivebutton:hover{
+        -webkit-transform:scale(1.1); 
+        transform:scale(1.1);
+        }
+
+    .foodtitle{
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 240px;
+        justify-content: center;
+        font-size: 40px; 
+    }
+    .watertitle{
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 250px;
+        justify-content: center;
+        font-size: 40px; 
+    }
+
+    /* maincontent css end */
+    /*request css start*/
+
+    .help{
+        background-color: orange;
+        text-align: center;
+        padding: 10px;
+        border-color: black;
+    }
+   
+    .request{
+      background-color: orange;
+      display: flex;
+      justify-content: center; /* Centers the content horizontally */
+      align-items: center; /* Centers the content vertically */
+      padding: 20px; /* Optional: Adds some space around the section */
+      width: 100%;
+    }
+
+    .nutrionistpic{
+      height: 400px;
+      border-radius: 2000px;
+      margin-left: 50px;
+    }
+
+    .requesttitle{
+      display: flex;
+      flex-direction: row;
+      justify-content: center; /* Centers the content horizontally */
+      width: 100%;
+      max-width: 1200px; /* Limits the width to a maximum of 1200px */
+      margin: 0 auto;
+      padding: 10px;
+  }
+    
+
+    .request-paragraph{
+      background-color: orange;
+      border-color: #000;
+      font-size: 25px;
+      padding: 5px;
+      margin: 10px;
+      display: inline-block;
+      width: 100%;
+      max-width: 600px; /* Adjusts width for smaller screens */
+      border: 3px solid black;
+    }
+
+    .requestbutton{
+      padding: 10px;
+      font-size: 20px;
+      border-color: brown;
+      background-color: orange;
+      transition: 0.3s width linear;
+      border-radius: 15px;
+      box-shadow: 4px 4px 4px #000;
+      transition: transform 0.25s ease;
+      cursor: pointer;
+      margin-bottom: 10px;
+      background-color: antiquewhite;
+        
+    }
+
+    /*request css end*/
+    /*quote css start*/
+
+    .doctor{
+        height: 300px;
+    }
+
+    .doctor2div{
+        width: 100%;
+        background-color: orange;
+        font-size: 14px;
+        padding: 15px;
+        border: 2px solid black; 
+    }
+
+    .doctordiv, .doctorquotediv{
+        display: flex;
+    }
+
+    
+
+    body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border: none;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.startbutton {
+    position: absolute;
+    margin-top: 700px;
+    left: 500px;
+    padding: 5px;
+    justify-content: center;
+    font-size: 30px;
+    border-color: brown;
+    background-color: orange;
+    transition: 0.3s width linear;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px #000;
+    transition:transform 0.25s ease;
+    cursor: pointer;
+}
+
+.loginbtn {
+  background-color: green;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+    -webkit-transform:scale(1.1); 
+    transform:scale(1.1);
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 14px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.register {
+  float: left;
+  padding-top: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+
+
+    /*quote css end*/
+
+
+
+
+  
+
+
+
