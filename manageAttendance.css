@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.attendance-container {
+    display: flex;
+    padding: 130px 40px 40px 80px;
+    gap: 40px;
+}
+
+.left-panel {
+    width: 35%;
+    background-color: #fff3e0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.left-panel h2 {
+    color: #ff7518;
+    margin-bottom: 20px;
+}
+
+.left-panel label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.left-panel select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.generate-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF7518;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.otp-display {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.otp-box {
+    background-color: #FF7518;
+    color: white;
+    font-size: 36px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+.timer-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.right-panel {
+    width: 60%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.right-panel h2 {
+    color: #ff7518;
+    margin-bottom: 20px;
+}
+
+.student-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.student-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.student-name {
+    flex: 1;
+    font-weight: 500;
+}
+
+.reason-dropdown {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.confirm-attendance {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.confirm-attendance .button-44 {
+    background-color: #FF7518;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-attendance .button-44:hover {
+    background-color: #e35e00;
+}

@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(to right, #fff3e0, #ffe0b2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.edit-profile-container {
+    max-width: 600px;
+    margin: 130px auto 50px;
+    background: #fffaf0;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.edit-profile-title {
+    text-align: center;
+    color: #FF7518;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.edit-profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-profile-form label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.edit-profile-form input {
+    padding: 10px;
+    border: 2px solid #ff7518;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.edit-profile-form input:focus {
+    border-color: #e65c00;
+    outline: none;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-44 {
+    background-color: #FF7518;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button-44:hover {
+    background-color: #e35e00;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: #333;
+}
+
+.cancel-button:hover {
+    background-color: #aaa;
+}

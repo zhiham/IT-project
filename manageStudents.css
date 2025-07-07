@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #fff3e0;
+ 
+}
+
+.manage-container {
+  display: flex;
+  gap: 50px;
+  padding: 140px 60px 80px;
+}
+
+.left-panel {
+  flex: 1;
+  background: #fffaf2;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(255, 117, 24, 0.2);
+}
+
+.right-panel {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(255, 117, 24, 0.2);
+}
+
+.intake-label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.intake-dropdown {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ff7518;
+  margin-bottom: 20px;
+}
+
+.student-list {
+  margin-top: 20px;
+}
+
+.student-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #ffe5cc;
+  font-size: 16px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.icon-btn.edit {
+  color: #ff7518;
+}
+
+.icon-btn.delete {
+  color: red;
+}
+
+
+.student-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.student-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.submit-button {
+  background-color: #ff7518;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #e65c00;
+}

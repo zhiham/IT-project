@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #fff3e0;
+}
+
+.edit-student-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  padding-top: 210px; 
+  background: #fff3e0; 
+}
+
+.edit-form-box {
+  background-color: #fffaf2;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+.edit-form-box h2 {
+  text-align: center;
+  color: #ff7518;
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.submit-button {
+  background-color: #ff7518;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #e65c00;
+}
