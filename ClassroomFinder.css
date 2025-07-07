@@ -1,0 +1,149 @@
+/* General Body Styles */
+body {
+    background: #fff3e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Classroom Finder Container */
+.classroom-container {
+    padding: 140px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Filters Section */
+.filters {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.filter-dropdown {
+    padding: 12px;
+    border: 2px solid #FF7518;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 200px;
+    background-color: white;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filter-dropdown:focus {
+    outline: none;
+    border-color: #e65c00;
+    box-shadow: 0 0 5px rgba(255, 117, 24, 0.4);
+}
+
+/* Custom Dropdown Arrow */
+.filter-dropdown::after {
+    content: " ▼";
+    font-size: 14px;
+    color: #FF7518;
+    margin-left: 10px;
+}
+
+/* Classroom List Heading */
+#classroom-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF7518;
+    margin-bottom: 40px;
+}
+
+/* Classroom List Layout */
+.classroom-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Aligns the boxes to the right */
+    gap: 30px;
+    width: 100%;
+}
+
+/* Classroom Box Styles */
+.classroom-box {
+    background-color: #FF7518;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(255, 117, 24, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Classroom Boxes */
+.classroom-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(255, 117, 24, 0.4);
+}
+
+/* Classroom Name */
+.classroom-name {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Available Times Section */
+.available-times {
+    font-size: 16px;
+}
+
+.available-times p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.available-times ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.available-times li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/* Classroom Box Styling for the Available Time Slots */
+.classroom-box .available-times li {
+    background-color: #ffffff;
+    color: #FF7518;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.classroom-box .available-times li:hover {
+    background-color: #e6e6e6;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .filter-dropdown {
+        width: 90%;
+    }
+
+    .classroom-list {
+        gap: 20px;
+        justify-content: center; /* For smaller screens, center the boxes */
+    }
+
+    .classroom-box {
+        width: 250px;
+    }
+}
